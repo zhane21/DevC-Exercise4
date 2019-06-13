@@ -1,2 +1,2 @@
-# DevC-Exercise4
-DevC Exercise 4
+# DevC JavaScript Development Course
+Exercise 4
