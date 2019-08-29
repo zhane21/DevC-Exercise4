@@ -22,7 +22,7 @@
       </div>
       <h1>My Personal Information</h1>
       <div class="image">
-        <a href="#">
+        <a href="#" data-toggle="tooltip" title="Click Please!">
           <img
             src="assets/photo.jpg"
             alt="my Picture"
@@ -93,6 +93,10 @@
   <script src="./assets/jquery-3.4.1.js"></script>
   <script src="./assets/js/bootstrap.js"></script>
   <script>
+    $(document).ready(function() {
+      $('[data-toggle="tooltip"]').tooltip();
+    });
+
     $("#myModal").on("shown.bs.modal", function() {
       $("#myInput").trigger("focus");
     });
