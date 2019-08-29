@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Contact</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <div class="box_contact">
+      <div class="topnav" id="myTopnav">
+        <a href="./index.html">Home</a>
+        <a href="./potofolio.html">Portofolio</a>
+        <a href="#" class="active">Contact</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+      <h1>Get in Touch</h1>
+      <div class="form">
+        <form
+          action="https://formspree.io/yudhakurniawan21@gmail.com"
+          method="post"
+        >
+          <div class="row">
+            <label for="fname">Full Name</label>
+            <input
+              type="text"
+              id="fname"
+              name="fullname"
+              placeholder="Your name.."
+            />
+          </div>
+          <div class="row">
+            <label for="lname">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Your email.."
+            />
+          </div>
+          <div class="row">
+            <label for="phone">Phone</label>
+            <input
+              type="number"
+              id="phone"
+              name="phone"
+              placeholder="Your Mobile Phone.."
+            />
+          </div>
+          <div class="row">
+            <label for="fname">Subject</label>
+            <textarea
+              id="subject"
+              name="subject"
+              placeholder="Write something.."
+              style="height:100px"
+            ></textarea>
+          </div>
+          <div class="row">
+            <input type="submit" value="Submit" />
+          </div>
+        </form>
+      </div>
+      <hr />
+      <div class="sosial">
+        <a href="#" class="fa fa-instagram"></a>
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-linkedin"></a>
+        <a href="#" class="fa fa-google"></a>
+      </div>
+    </div>
+  </body>
+  <script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+  </script>
+</html>

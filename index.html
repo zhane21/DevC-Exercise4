@@ -1,11 +1,108 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <title>Exercise 4</title>
-</head>
-<body>
-    <center>
-        <h1>Final Project</h1>
-    </center>
-</body>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Personal Information Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="./assets/css/bootstrap.css" />
+  </head>
+  <body>
+    <div class="box">
+      <div class="topnav" id="myTopnav">
+        <a href="#home" class="active">Home</a>
+        <a href="./potofolio.html">Portofolio</a>
+        <a href="./contact.html">Contact</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+      <h1>My Personal Information</h1>
+      <div class="image">
+        <a href="#">
+          <img
+            src="assets/photo.jpg"
+            alt="my Picture"
+            class="avatar"
+            data-toggle="modal"
+            data-target="#myModal"
+          />
+        </a>
+        <h5>Yudha Kurniawan</h5>
+        <h6>Web Programmer</h6>
+      </div>
+      <div class="content">
+        <div class="content1">
+          <h5>About me</h5>
+          <p>
+            I am an employee at one of the hospitality software development
+            companies, I work as a web programmer using react js, my hobby is
+            reading and coding all day long, honest, humble, problem solver, and
+            thinker.
+          </p>
+        </div>
+        <div class="content2">
+          <h5>Personal information</h5>
+          <p><span>Age : 28 years old</span></p>
+          <p><span>Mobile Number : 0858 8576 0522</span></p>
+          <p><span>Email : yudhakurniawan21@gmail.com</span></p>
+          <p>
+            <span>Address : </span>
+            cempaka warna no. 26, cempaka putih timur, cempaka putih, jakarta
+            pusat
+          </p>
+        </div>
+      </div>
+      <div class="sosial"></div>
+    </div>
+    <!-- The Modal -->
+    <div class="modal" id="myModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h4 class="modal-title">Dont See too long...!</h4>
+            <button type="button" class="close" data-dismiss="modal">
+              &times;
+            </button>
+          </div>
+
+          <!-- Modal body -->
+          <div class="modal-body" style="text-align: center;">
+            <img
+              src="assets/photo.jpg"
+              alt="my Picture"
+              class="avatar"
+              style="width:300px; height: 300px;"
+            />
+          </div>
+
+          <!-- Modal footer -->
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" data-dismiss="modal">
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./assets/jquery-3.4.1.js"></script>
+  <script src="./assets/js/bootstrap.js"></script>
+  <script>
+    $("#myModal").on("shown.bs.modal", function() {
+      $("#myInput").trigger("focus");
+    });
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+  </script>
 </html>
